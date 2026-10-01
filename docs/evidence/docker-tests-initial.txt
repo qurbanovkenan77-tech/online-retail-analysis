@@ -1,0 +1,5 @@
+......................................................................s. [ 93%]
+.....                                                                    [100%]
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_cli.py:231: This account can bypass directory write permissions.
+76 passed, 1 skipped in 10.88s

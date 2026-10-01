@@ -1,0 +1,4 @@
+metric,before_gbp,after_gbp,change_gbp,percentage_change
+positive_sales_gbp,10270149.73,10245935.99,-24213.74,-0.24
+cancellation_value_gbp,478709.18,475886.16,-2823.02,-0.59
+net_value_gbp,9791440.55,9770049.83,-21390.72,-0.22
