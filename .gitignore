@@ -1,0 +1,12 @@
+# Python virtual environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Raw Excel workbooks
+*.xlsx
+*.xls
+
+# macOS files
+.DS_Store
