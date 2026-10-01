@@ -8,8 +8,8 @@ Baseline: 6481c3882c0f28b74cf578ee0e421ece1bb4118a.
 
 PASS against the reviewed plan for the implementation and checks described
 below. No analytical defect was found. Documentation and review-archive hygiene
-corrections are included in the handoff. Student must apply these updates;
-final transcript preservation, commit/push and submission checks remain open.
+corrections are included in the handoff. Student applied these updates and pushed commit 751eb12;
+final transcript preservation and submission checks remain open.
 This report records stages chronologically: earlier pending statements describe
 the status at that stage and are superseded by later results.
 A clean dependency installation was not repeated; the Mac used its existing
@@ -210,12 +210,12 @@ the local PNGs, not a separate fresh inspection of Docker PNG pixels.
 
 ## Resolution and handoff
 
-- T01: stale README role/status wording corrected in handoff; Mac application pending.
+- T01: stale README role/status wording corrected in handoff; applied on the Mac and committed in 751eb12.
 - T02: real-source subtotal completed and independently verified.
 - T03: full data, charts, metadata and fresh student Docker checks completed.
 - T04: submission/transcript completeness remains open until the conversations
   are preserved in full, committed, and uploaded separately to Canvas.
-- T05: tester-review.zip excluded in handoff .gitignore; Mac application pending.
+- T05: tester-review.zip excluded in handoff .gitignore; applied on the Mac and committed in 751eb12.
 
 No application source changes were needed, so no post-fix analytical rerun is
 required. The documentation and ignore-file changes require a diff review.

@@ -223,7 +223,9 @@ ChatGPT's environment.
   input hashes matched. Docker PNG signatures/sizes and persistence passed.
 - No analytical defect was found. README status wording and review-archive
   exclusion were corrected. A clean dependency installation was not repeated.
-  Final documentation handoff and complete transcript submission remain.
+  Documentation updates are applied. The Tester documentation and evidence have been committed.
+All three role transcript files are present, with disclosed export
+limitations. Canvas submission is a separate final step.
   See [test report](docs/test-report.md),
   [independent calculations](docs/evidence/tester-independent-check.txt),
   [Mac baseline](docs/evidence/tester-mac-baseline.txt),
@@ -277,8 +279,13 @@ docs/transcripts/kg396_architect.txt,
 docs/transcripts/kg396_builder.txt, and
 docs/transcripts/kg396_tester.txt.
 
-Builder and technical Tester verification are complete; final documentation
-and transcript handoff remain.
-Transcript completeness has not yet been independently established.
-Submission requires the three complete transcripts plus both actual
-Repository A and Repository B URLs.
+Builder implementation, the student manual smoke test, and independent
+Tester technical verification are complete. The documentation, evidence,
+and all three role transcript files are committed.
+
+The transcript exports have disclosed limitations, including flattened
+formatting and missing attachment information; full verbatim completeness
+has not been established.
+
+Final submission requires both repository URLs and the same three
+transcript files uploaded separately to Canvas.
