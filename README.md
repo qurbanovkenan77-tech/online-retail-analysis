@@ -195,7 +195,13 @@ ChatGPT's environment.
   exactly, with identical input hashes.
 - Kanan reviewed the four local charts and reported no overlapping labels.
 - Docker files persisted on the Mac after the container exited.
-- Final README-based manual smoke test: pending.
+- Final README-based manual smoke test: passed on September 30, 2026,
+  against commit ffb1398e3bc7a01fff910bd9caa6ad071280a607.
+  Setup, 77 local tests, and local analysis succeeded; missing input
+  correctly returned exit 1. Docker smoke commands exited 0, all nine
+  CSVs matched exactly, and the student opened the persisted Docker CSV
+  and all four charts with readable labels and no overlap or cut-off text.
+  See [the smoke-test record](docs/smoke-test.md). Local setup reused .venv.
 - Independent Tester review and real-source subtotal verification: pending.
 
 Evidence:

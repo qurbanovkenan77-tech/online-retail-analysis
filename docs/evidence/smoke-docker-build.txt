@@ -1,0 +1,45 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 415B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 359B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 530B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b
+#5 resolve docker.io/library/python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b done
+#5 DONE 0.0s
+
+#6 [4/6] RUN python -m pip install --no-cache-dir -r requirements.txt     && python -m pip check
+#6 CACHED
+
+#7 [2/6] WORKDIR /app
+#7 CACHED
+
+#8 [3/6] COPY requirements.txt .
+#8 CACHED
+
+#9 [5/6] COPY retail_analysis/ ./retail_analysis/
+#9 CACHED
+
+#10 [6/6] COPY tests/ ./tests/
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:240b3eab5bf28d47ae80654b0b04b8902c0ebfa434b82b469598929774c1a33c 0.0s done
+#11 exporting config sha256:f25e5ae2705d18134e3c72342f2e80a292312d0f726e949fe9e716d73410e59c done
+#11 exporting attestation manifest sha256:66ad36d92c8b370407fb01e22360a5c2f8adaf6dbdbd15422d464cf9c32e824c 0.0s done
+#11 exporting manifest list sha256:0e7a1689c36f053e415d0fb8cec452822d022e3fe382d10b8d726e9b6ed8cbec done
+#11 naming to docker.io/library/online-retail-analysis:latest done
+#11 unpacking to docker.io/library/online-retail-analysis:latest done
+#11 DONE 0.1s

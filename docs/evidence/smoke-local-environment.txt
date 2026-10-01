@@ -1,0 +1,6 @@
+Thu Oct  1 02:36:57 UTC 2026
+ffb1398e3bc7a01fff910bd9caa6ad071280a607
+?? docs/evidence/smoke-local-environment.txt
+Python 3.13.14
+pip 26.1.2 from /Users/user/Desktop/online-retail-analysis/.venv/lib/python3.13/site-packages/pip (python 3.13)
+Darwin arm64
