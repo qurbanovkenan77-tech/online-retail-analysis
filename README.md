@@ -202,7 +202,33 @@ ChatGPT's environment.
   CSVs matched exactly, and the student opened the persisted Docker CSV
   and all four charts with readable labels and no overlap or cut-off text.
   See [the smoke-test record](docs/smoke-test.md). Local setup reused .venv.
-- Independent Tester review and real-source subtotal verification: pending.
+- Independent Tester technical verification: passed on October 1, 2026,
+  against commit 6481c3882c0f28b74cf578ee0e421ece1bb4118a.
+  Kanan executed fresh Mac tests (77 passed, exit 0), a full-data run,
+  a cached Docker build (exit 0), and fresh container tests (76 passed,
+  1 expected permission-test skip, exit 0).
+- Tester directly executed a separate workbook calculation in Linux
+  Python 3.12.14 / pandas 2.2.3 without importing application functions.
+  Cleaning audits, exclusions, grouped metrics, both product ranks,
+  customer concentration, duplicate sensitivity, and largest lines matched
+  the fresh Mac CSVs at their export precision. Input hash and metadata
+  checks passed; all four supplied local charts were visually readable.
+- A hand-calculated S=50, C=20, A=10, N=20 example passed. Real-source
+  product 23843 had two eligible rows: 80,995 x GBP 2.08 in sales and
+  the same cancellation value, giving S=C=GBP 168,469.60 and N=0.
+  Tester checked this subtotal separately using Decimal.
+- Kanan's fresh Docker run rejected writes to the read-only input mount,
+  exited 0, and left all outputs accessible after container removal.
+  All nine Docker CSVs matched the reviewed local CSVs byte-for-byte;
+  input hashes matched. Docker PNG signatures/sizes and persistence passed.
+- No analytical defect was found. README status wording and review-archive
+  exclusion were corrected. A clean dependency installation was not repeated.
+  Final documentation handoff and complete transcript submission remain.
+  See [test report](docs/test-report.md),
+  [independent calculations](docs/evidence/tester-independent-check.txt),
+  [Mac baseline](docs/evidence/tester-mac-baseline.txt),
+  [Docker tests](docs/evidence/tester-docker-build-tests.txt), and
+  [Docker persistence](docs/evidence/tester-docker-persistence.txt).
 
 Evidence:
 [local tests](docs/evidence/cli-tests-initial.txt),
@@ -232,8 +258,10 @@ do not establish general retail trends or robust annual seasonality.
 - Architect: developed the reviewed plan and analytical decisions.
 - Builder: supplied implementation, tests, explanations, and fixes.
   Kanan ran commands, shared actual results, and reviewed charts.
-- Tester: reserved for a separate fresh conversation after the manual
-  smoke test; not yet performed.
+- Tester: independently reviewed the plan, implementation and test suite;
+  recalculated the workbook, inspected charts, and evaluated fresh Mac and
+  Docker results. Identified stale documentation and review-archive hygiene
+  issues and supplied corrections with a test report and calculation evidence.
 
 Accepted recommendation: merchandise-only analysis with separately
 reported charges and ambiguous entries.
@@ -249,6 +277,8 @@ docs/transcripts/kg396_architect.txt,
 docs/transcripts/kg396_builder.txt, and
 docs/transcripts/kg396_tester.txt.
 
-The Builder conversation is ongoing; Tester work remains pending.
+Builder and technical Tester verification are complete; final documentation
+and transcript handoff remain.
+Transcript completeness has not yet been independently established.
 Submission requires the three complete transcripts plus both actual
 Repository A and Repository B URLs.

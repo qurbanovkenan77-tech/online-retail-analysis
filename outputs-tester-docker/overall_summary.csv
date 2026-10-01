@@ -1,0 +1,2 @@
+positive_sales_gbp,cancellation_value_gbp,other_negative_value_gbp,net_value_gbp,cancellation_value_rate_pct,eligible_row_count,coverage_start,coverage_end,identified_positive_sales_gbp,unidentified_positive_sales_gbp,identified_sales_coverage_pct,top_10_customer_sales_gbp,top_10_customer_concentration_pct,identified_positive_customer_count
+10245935.99,475886.16,0.00,9770049.83,4.64,531127,2010-12-01 08:26:00,2011-12-09 12:50:00,8736027.64,1509908.35,85.26,1519899.12,17.40,4334

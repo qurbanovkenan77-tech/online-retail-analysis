@@ -1,0 +1,81 @@
+{
+  "run_timestamp_utc": "2026-10-01T17:33:00.670607+00:00",
+  "input_filename": "Online Retail.xlsx",
+  "input_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+  "python_version": "3.13.15",
+  "platform": "Linux-7.0.12-linuxkit-aarch64-with-glibc2.41",
+  "dependency_versions": {
+    "pandas": "3.0.6",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1",
+    "numpy": "2.5.3"
+  },
+  "output_paths": {
+    "overall_summary.csv": "/outputs/overall_summary.csv",
+    "product_summary.csv": "/outputs/product_summary.csv",
+    "country_summary.csv": "/outputs/country_summary.csv",
+    "monthly_summary.csv": "/outputs/monthly_summary.csv",
+    "customer_summary.csv": "/outputs/customer_summary.csv",
+    "duplicate_comparison.csv": "/outputs/duplicate_comparison.csv",
+    "excluded_entries.csv": "/outputs/excluded_entries.csv",
+    "cleaning_summary.csv": "/outputs/cleaning_summary.csv",
+    "large_value_lines.csv": "/outputs/large_value_lines.csv",
+    "top_products.png": "/outputs/top_products.png",
+    "country_sales.png": "/outputs/country_sales.png",
+    "monthly_sales.png": "/outputs/monthly_sales.png",
+    "sales_to_net.png": "/outputs/sales_to_net.png",
+    "run_metadata.json": "/outputs/run_metadata.json"
+  },
+  "currency": "GBP",
+  "net_value_definition": "Net recorded merchandise value is before separately recorded discounts and charges. It is not profit or complete accounting revenue.",
+  "partial_month_policy": "December 2011 is designated partial for the UCI Online Retail source. False means not designated partial under this source's coverage, not verified complete. Review this rule for a different dataset.",
+  "monthly_timestamp_definition": "First and last observed eligible transaction timestamps; these do not establish complete calendar coverage.",
+  "duplicate_policy": "Remove exact duplicates using the eight original columns, retaining the first. Identical lines may be legitimate.",
+  "excluded_entries_basis": "post_deduplication",
+  "monetary_reconciliation_tolerance": {
+    "absolute_gbp": 1e-06,
+    "relative": 1e-12
+  },
+  "export_policy": "GBP amounts and percentages use two decimals. UnitPrice retains source precision. Blank means unavailable. Rounded group sums can differ from rounded overall totals.",
+  "raw_profile": {
+    "rows": 541909,
+    "columns": 8,
+    "column_names": [
+      "InvoiceNo",
+      "StockCode",
+      "Description",
+      "Quantity",
+      "InvoiceDate",
+      "UnitPrice",
+      "CustomerID",
+      "Country"
+    ],
+    "missing_by_column": {
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "Description": 1454,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "UnitPrice": 0,
+      "CustomerID": 135080,
+      "Country": 0
+    },
+    "exact_duplicates_beyond_first": 5268,
+    "c_prefixed_invoice_rows": 9288,
+    "negative_quantity_rows": 10624,
+    "negative_quantity_without_c_prefix": 1336,
+    "c_prefixed_nonnegative_quantity_rows": 0,
+    "zero_price_rows": 2515,
+    "negative_price_rows": 2,
+    "zero_quantity_rows": 0,
+    "invalid_or_nonfinite_quantity_rows": 0,
+    "invalid_or_nonfinite_price_rows": 0,
+    "nonintegral_quantity_rows": 0,
+    "invalid_or_missing_date_rows": 0,
+    "minimum_quantity": -80995.0,
+    "maximum_quantity": 80995.0,
+    "first_timestamp": "2010-12-01 08:26:00",
+    "last_timestamp": "2011-12-09 12:50:00"
+  }
+}

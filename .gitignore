@@ -10,3 +10,6 @@ __pycache__/
 
 # macOS files
 .DS_Store
+
+# Temporary review package contains the raw workbook
+tester-review.zip

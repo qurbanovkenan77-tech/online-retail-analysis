@@ -1,0 +1,13 @@
+PASS ordered cleaning counts and all stage value audits: 541909 raw; 531127 eligible
+PASS excluded-code counts, price partitions and diagnostic values
+PASS every row: product_summary.csv including ranks/labels or monthly coverage where applicable
+PASS every row: country_summary.csv including ranks/labels or monthly coverage where applicable
+PASS every row: monthly_summary.csv including ranks/labels or monthly coverage where applicable
+PASS all customer rows, exact top ten and overall concentration/coverage
+PASS same-population duplicate sensitivity
+PASS largest-value line selection and values
+PASS file inventory, metadata hash, paths, versions and raw missing/duplicate counts
+Metadata timestamp: 2026-10-01T17:15:48.172601+00:00
+Overall: {'positive_sales_gbp': 10245935.993, 'cancellation_value_gbp': 475886.16000000003, 'other_negative_value_gbp': -0.0, 'net_value_gbp': 9770049.833, 'cancellation_value_rate_pct': 4.6446333485308156}
+Identified sales: 8736027.643 Top ten: 1519899.12 Concentration: 17.398057585335874
+ALL INDEPENDENT CHECKS PASSED

@@ -1,0 +1,4 @@
+Tester executed in Linux Python 3.12.14, pandas 2.2.3 (not target pinned environment).
+Independent arithmetic: 5*10=50; abs(-2)*10=20; abs(-1)*10=10; 50-20-10=20; 100*20/50=40%.
+PASS: application matches all five expected metrics.
+PASS: duplicate sale gives before S=100, N=70; after S=50, N=20.

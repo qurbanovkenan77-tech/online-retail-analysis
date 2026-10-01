@@ -1,0 +1,20 @@
+Thu Oct  1 17:32:34 UTC 2026
+PASS: input mount rejects writes (read-only filesystem).
+Reading Online Retail.xlsx...
+Cleaning and reconciling merchandise rows...
+Calculating summaries and duplicate sensitivity...
+Created 9 CSVs, 4 PNGs, and run_metadata.json in /outputs
+Eligible merchandise rows: 531,127
+DOCKER_RUN_EXIT_CODE=0
+PASS: exact CSV match: cleaning_summary.csv
+PASS: exact CSV match: country_summary.csv
+PASS: exact CSV match: customer_summary.csv
+PASS: exact CSV match: duplicate_comparison.csv
+PASS: exact CSV match: excluded_entries.csv
+PASS: exact CSV match: large_value_lines.csv
+PASS: exact CSV match: monthly_summary.csv
+PASS: exact CSV match: overall_summary.csv
+PASS: exact CSV match: product_summary.csv
+PASS: input hash unchanged and matches both metadata files.
+PASS: nine CSVs, four PNGs and metadata persist after container exit.
+COMPARISON_EXIT_CODE=0

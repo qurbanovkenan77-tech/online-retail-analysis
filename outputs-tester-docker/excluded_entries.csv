@@ -1,0 +1,19 @@
+StockCode,category,reason,basis,row_count,positive_price_row_count,zero_price_row_count,negative_price_row_count,invalid_numeric_row_count,signed_value_positive_price_gbp,signed_value_nonpositive_price_gbp,uncomputable_value_count
+22016,voucher,£100 gift voucher,post_deduplication,1,1,0,0,0,83.33,0.00,0
+23444,delivery,Next Day Carriage,post_deduplication,81,80,1,0,0,1185.00,0.00,0
+AMAZONFEE,fee,AMAZON FEE,post_deduplication,34,34,0,0,0,-221520.50,0.00,0
+B,accounting_adjustment,Adjust bad debt,post_deduplication,3,1,0,2,0,11062.06,-22124.12,0
+BANK CHARGES,fee,Bank Charges,post_deduplication,37,37,0,0,0,-7175.64,0.00,0
+C2,delivery,CARRIAGE,post_deduplication,144,143,1,0,0,6986.00,0.00,0
+CRUK,fee,CRUK Commission,post_deduplication,16,16,0,0,0,-7933.43,0.00,0
+D,discount,Discount adjustment,post_deduplication,77,77,0,0,0,-5696.22,0.00,0
+DOT,delivery,DOTCOM POSTAGE,post_deduplication,710,707,3,0,0,206245.48,0.00,0
+M,manual,Manual; underlying product/activity unclear,post_deduplication,566,560,6,0,0,-69034.19,0.00,0
+POST,delivery,POSTAGE,post_deduplication,1256,1252,4,0,0,66230.64,0.00,0
+S,samples,Samples; code does not identify a specific product,post_deduplication,62,62,0,0,0,-3039.65,0.00,0
+gift_0001_10,voucher,£10 gift voucher,post_deduplication,9,8,1,0,0,74.97,0.00,0
+gift_0001_20,voucher,£20 gift voucher,post_deduplication,10,9,1,0,0,167.05,0.00,0
+gift_0001_30,voucher,£30 gift voucher,post_deduplication,8,7,1,0,0,175.53,0.00,0
+gift_0001_40,voucher,£40 gift voucher,post_deduplication,3,3,0,0,0,100.70,0.00,0
+gift_0001_50,voucher,£50 gift voucher,post_deduplication,4,4,0,0,0,167.56,0.00,0
+m,manual,Manual; underlying product/activity unclear,post_deduplication,1,1,0,0,0,2.55,0.00,0

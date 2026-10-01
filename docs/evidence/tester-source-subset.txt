@@ -1,0 +1,12 @@
+INPUT_SHA256: 43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d
+
+SOURCE ROWS FOR PRODUCT 23843:
+ excel_row InvoiceNo StockCode                 Description Quantity         InvoiceDate UnitPrice CustomerID        Country  exact_duplicate_removed
+    540423    581483     23843 PAPER CRAFT , LITTLE BIRDIE    80995 2011-12-09 09:15:00      2.08      16446 United Kingdom                    False
+    540424   C581484     23843 PAPER CRAFT , LITTLE BIRDIE   -80995 2011-12-09 09:27:00      2.08      16446 United Kingdom                    False
+
+NUMBER OF SOURCE ROWS: 2
+
+EXISTING PROJECT OUTPUT:
+StockCode                 Description  positive_sales_gbp  cancellation_value_gbp  other_negative_value_gbp  net_value_gbp  cancellation_value_rate_pct  sales_share_pct  positive_sales_rank  net_value_rank
+    23843 PAPER CRAFT , LITTLE BIRDIE            168469.6                168469.6                       0.0            0.0                        100.0             1.64                    2            3898
