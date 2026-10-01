@@ -1,0 +1,32 @@
+.....F.............................................................      [100%]
+=================================== FAILURES ===================================
+______ test_product_sales_and_net_ranks_differ_and_ties_use_minimum_rank _______
+
+    def test_product_sales_and_net_ranks_differ_and_ties_use_minimum_rank():
+        eligible = eligible_rows([
+            make_row("1", code="A", price=100),
+            make_row("C2", code="A", quantity=-1, price=90),
+            make_row("3", code="TEST_B", price=80),
+            make_row("4", code="C", price=80),
+            make_row("C5", code="TEST_D", quantity=-1, price=5),
+        ])
+    
+        products = product_summary(eligible)
+        indexed = products.set_index("StockCode")
+    
+        assert indexed["positive_sales_rank"].to_dict() == {
+            "A": 1, "TEST_B": 2, "C": 2, "TEST_D": 4,
+        }
+        assert indexed["net_value_rank"].to_dict() == {
+            "A": 3, "TEST_B": 1, "C": 1, "TEST_D": 4,
+        }
+>       assert top_products(products)["StockCode"].tolist() == ["A", "TEST_B", "C"]
+E       AssertionError: assert ['A', 'C', 'TEST_B'] == ['A', 'TEST_B', 'C']
+E         
+E         At index 1 diff: 'C' != 'TEST_B'
+E         Use -v to get more diff
+
+tests/test_analysis_edges.py:60: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_analysis_edges.py::test_product_sales_and_net_ranks_differ_and_ties_use_minimum_rank
+1 failed, 66 passed in 1.17s

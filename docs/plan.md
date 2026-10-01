@@ -362,3 +362,22 @@ Commit reviewed plan, implementation, tests, documentation, complete transcripts
 - [ ] No verification, findings, or student actions are claimed without evidence.
 
 At plan finalization, only the planning discussion, approved decisions, and Architect's read-only source inspection are complete. All implementation and acceptance checkboxes remain pending.
+
+## 17. Builder clarification approved by the student — September 30, 2026
+
+December 2011 is designated partial based on the documented coverage of
+this UCI Online Retail dataset.
+
+Monthly coverage_start and coverage_end report the first and last observed
+eligible transaction timestamps within each month. These observations do
+not establish complete calendar coverage.
+
+is_partial_month=False means "not designated partial under this source's
+coverage", not "verified complete".
+
+The December 2011 designation is specific to this UCI dataset and must be
+reviewed before applying the application to a different input dataset.
+Do not infer completeness or partial coverage solely from transaction dates.
+
+Growth calculations remain out of scope. The implementation tests must
+verify this behavior, and the README must explain these definitions.

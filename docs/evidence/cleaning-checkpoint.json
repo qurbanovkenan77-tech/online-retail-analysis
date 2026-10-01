@@ -1,0 +1,20 @@
+{
+  "check": "Full-workbook cleaning and reconciliation",
+  "executed_at_utc": "2026-10-01T01:58:28.566051+00:00",
+  "environment": "macOS-26.4-arm64-arm-64bit-Mach-O",
+  "python_version": "3.13.14",
+  "base_commit": "8da3f56fbf46d949df2050936562c7996f97c1b2",
+  "working_tree_status": "M retail_analysis/data.py\n?? docs/evidence/cleaning-checkpoint.csv\n?? docs/evidence/data-cleaning-tests.txt\n?? docs/evidence/excluded-checkpoint.csv\n?? tests/test_cleaning.py",
+  "input_filename": "Online Retail.xlsx",
+  "input_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+  "raw_rows": 541909,
+  "removed_rows": 10782,
+  "eligible_rows": 531127,
+  "eligible_category_counts": {
+    "positive_sale": 522460,
+    "cancellation": 8667,
+    "other_negative": 0
+  },
+  "reconciliation": "passed",
+  "input_unchanged": true
+}

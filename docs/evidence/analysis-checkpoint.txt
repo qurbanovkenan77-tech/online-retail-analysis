@@ -1,0 +1,103 @@
+FULL-WORKBOOK ANALYSIS CHECKPOINT
+Executed UTC: 2026-10-01T02:10:10.984789+00:00
+Environment: macOS-26.4-arm64-arm-64bit-Mach-O
+Python: 3.13.14
+Base commit: 8da3f56fbf46d949df2050936562c7996f97c1b2
+Working tree:
+M docs/plan.md
+ M retail_analysis/data.py
+?? docs/evidence/analysis-tests-expanded-rerun-2.txt
+?? docs/evidence/analysis-tests-expanded-rerun.txt
+?? docs/evidence/analysis-tests-expanded.txt
+?? docs/evidence/analysis-tests-initial.txt
+?? docs/evidence/cleaning-checkpoint.csv
+?? docs/evidence/cleaning-checkpoint.json
+?? docs/evidence/data-cleaning-tests.txt
+?? docs/evidence/excluded-checkpoint.csv
+?? retail_analysis/analysis.py
+?? tests/test_analysis.py
+?? tests/test_analysis_edges.py
+?? tests/test_cleaning.py
+Input: data/Online Retail.xlsx
+SHA-256: 43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d
+Input unchanged: yes
+Cleaning and grouped reconciliation: passed
+
+TABLE ROW COUNTS
+overall_summary.csv: 1
+product_summary.csv: 3920
+country_summary.csv: 38
+monthly_summary.csv: 13
+customer_summary.csv: 4334
+duplicate_comparison.csv: 3
+excluded_entries.csv: 18
+cleaning_summary.csv: 30
+large_value_lines.csv: 10
+
+OVERALL SUMMARY
+                            metric               value
+                positive_sales_gbp         10245935.99
+            cancellation_value_gbp           475886.16
+          other_negative_value_gbp               -0.00
+                     net_value_gbp          9770049.83
+       cancellation_value_rate_pct                4.64
+                eligible_row_count              531127
+                    coverage_start 2010-12-01 08:26:00
+                      coverage_end 2011-12-09 12:50:00
+     identified_positive_sales_gbp          8736027.64
+   unidentified_positive_sales_gbp          1509908.35
+     identified_sales_coverage_pct               85.26
+         top_10_customer_sales_gbp          1519899.12
+ top_10_customer_concentration_pct               17.40
+identified_positive_customer_count                4334
+
+TOP 10 PRODUCTS BY POSITIVE SALES
+StockCode                        Description  positive_sales_gbp  net_value_gbp  positive_sales_rank  net_value_rank
+    22423           REGENCY CAKESTAND 3 TIER           174156.54      164459.49                    1               1
+    23843        PAPER CRAFT , LITTLE BIRDIE           168469.60           0.00                    2            3898
+   85123A WHITE HANGING HEART T-LIGHT HOLDER           104462.75       97838.45                    3               3
+    47566                      PARTY BUNTING            99445.23       98243.88                    4               2
+   85099B            JUMBO BAG RED RETROSPOT            94159.81       92175.79                    5               4
+    23166     MEDIUM CERAMIC TOP STORAGE JAR            81700.92        4221.28                    6             580
+    23084                 RABBIT NIGHT LIGHT            66870.03       66661.63                    7               5
+    22086     PAPER CHAIN KIT 50'S CHRISTMAS            64875.59       63715.24                    8               6
+    84879      ASSORTED COLOUR BIRD ORNAMENT            58927.62       58792.42                    9               7
+    79321                      CHILLI LIGHTS            54096.36       53746.66                   10               8
+
+TOP 10 COUNTRIES BY POSITIVE SALES
+       Country  positive_sales_gbp  cancellation_value_gbp  other_negative_value_gbp  net_value_gbp  cancellation_value_rate_pct  sales_share_pct
+United Kingdom          8723160.34               443038.31                     -0.00     8280122.03                         5.08            85.14
+   Netherlands           283889.34                  409.80                     -0.00      283479.54                         0.14             2.77
+          EIRE           270850.86                11470.84                     -0.00      259380.02                         4.24             2.64
+       Germany           205381.15                 4761.49                     -0.00      200619.66                         2.32             2.00
+        France           184493.00                 2416.40                     -0.00      182076.60                         1.31             1.80
+     Australia           138103.81                 1181.31                     -0.00      136922.50                         0.86             1.35
+         Spain            55706.56                 3959.91                     -0.00       51746.65                         7.11             0.54
+   Switzerland            53065.60                  582.55                     -0.00       52483.05                         1.10             0.52
+         Japan            37416.37                 1996.58                     -0.00       35419.79                         5.34             0.37
+       Belgium            36927.34                  264.38                     -0.00       36662.96                         0.72             0.36
+
+MONTHLY SUMMARY
+  Month  positive_sales_gbp  cancellation_value_gbp  other_negative_value_gbp  net_value_gbp  cancellation_value_rate_pct      coverage_start        coverage_end  is_partial_month
+2010-12           775638.36                17547.86                     -0.00      758090.50                         2.26 2010-12-01 08:26:00 2010-12-23 17:41:00             False
+2011-01           670380.24                91525.05                     -0.00      578855.19                        13.65 2011-01-04 10:00:00 2011-01-31 16:59:00             False
+2011-02           507799.87                 8335.52                     -0.00      499464.35                         1.64 2011-02-01 08:23:00 2011-02-28 17:01:00             False
+2011-03           689833.51                10504.30                     -0.00      679329.21                         1.52 2011-03-01 08:30:00 2011-03-31 19:55:00             False
+2011-04           515377.99                33316.06                     -0.00      482061.93                         6.46 2011-04-01 08:22:00 2011-04-28 19:53:00             False
+2011-05           739938.00                 8948.23                     -0.00      730989.77                         1.21 2011-05-01 10:51:00 2011-05-31 15:53:00             False
+2011-06           737408.98                13713.84                     -0.00      723695.14                         1.86 2011-06-01 07:37:00 2011-06-30 20:08:00             False
+2011-07           688054.34                11392.26                     -0.00      676662.08                         1.66 2011-07-01 08:16:00 2011-07-31 16:04:00             False
+2011-08           723998.17                22926.57                     -0.00      701071.60                         3.17 2011-08-01 08:30:00 2011-08-31 17:31:00             False
+2011-09          1028230.38                16980.64                     -0.00     1011249.74                         1.65 2011-09-01 08:25:00 2011-09-30 17:22:00             False
+2011-10          1103194.25                41613.03                     -0.00     1061581.22                         3.77 2011-10-02 10:32:00 2011-10-31 17:13:00             False
+2011-11          1451740.98                24991.44                     -0.00     1426749.54                         1.72 2011-11-01 08:16:00 2011-11-30 17:42:00             False
+2011-12           614340.92               174091.36                     -0.00      440249.56                        28.34 2011-12-01 08:12:00 2011-12-09 12:50:00              True
+
+DUPLICATE COMPARISON
+                metric  before_gbp   after_gbp  change_gbp  percentage_change
+    positive_sales_gbp 10270149.73 10245935.99   -24213.74              -0.24
+cancellation_value_gbp   478709.18   475886.16    -2823.02              -0.59
+         net_value_gbp  9791440.55  9770049.83   -21390.72              -0.22
+
+Net recorded merchandise value is before separately recorded discounts and charges. It is not profit or complete accounting revenue.
+Displayed monetary values are rounded for readability; reconciliation used unrounded values.
