@@ -109,7 +109,7 @@ Visual observations and the exclusion comparison are also recorded in
 the Builder conversation, to be preserved in
 docs/transcripts/kg396_builder.txt.
 
-## Failures and remaining work
+## Failures and follow-up
 
 No unexpected failures were reported during this manual smoke test.
 The missing-input failure was intentional.
@@ -117,6 +117,10 @@ The missing-input failure was intentional.
 Earlier Builder test-fixture errors and their corrections remain
 documented in the README and original evidence logs.
 
-Independent Tester review, including an independently calculated
-real-source subtotal, remains pending. The complete Builder transcript
-must still be finalized and saved.
+At the time of this smoke test, independent Tester review was pending.
+That review was subsequently completed on October 1, 2026, and its
+report and evidence were committed in 751eb12.
+See [the Tester report](test-report.md).
+
+All three role transcript files are now committed, with disclosed
+export limitations.
